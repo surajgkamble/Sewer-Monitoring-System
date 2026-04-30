@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Sewer Monitoring</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="register-body d-flex align-items-center justify-content-center vh-100">
+
+    <div class="card-box p-4" style="width: 100%; max-width: 400px;">
+
+        <div class="text-center mb-4">
+            <h3 class="text-white fw-bold">Create Account</h3>
+            <p class="text-secondary small">Register to access system</p>
+        </div>
+
+        <form onsubmit="registerUser(event)">
+
+            <input type="text" id="regName" class="form-control bg-dark text-white border-secondary mb-3" placeholder="Full Name" required>
+
+            <input type="email" id="regEmail" class="form-control bg-dark text-white border-secondary mb-3" placeholder="Email" required>
+
+            <input type="password" id="regPass" class="form-control bg-dark text-white border-secondary mb-4" placeholder="Password" required>
+
+            <button type="submit" class="btn btn-success w-100 fw-semibold">Sign Up</button>
+
+        </form>
+
+        <div class="text-center mt-3">
+            <small class="text-secondary">
+                Already have an account?
+                <a href="index.html" class="text-info text-decoration-none">Login</a>
+            </small>
+        </div>
+
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>
